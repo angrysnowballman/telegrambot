@@ -2,7 +2,7 @@ package com.betbot.telegramm.bot.commands.enums;
 
 import lombok.Getter;
 
-
+    @Getter
     public enum CommandName {
         START("START_COMMAND", "/start"),
         CLOSE("CLOSE_COMMAND", "/close"),
