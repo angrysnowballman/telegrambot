@@ -59,4 +59,13 @@ public class UserSessionService {
         userSessionRepository.save(session);
     }
 
+    public void setReferralId(Long chatId, Long expertId){
+        UserSession session = getOrCreateUserSession(chatId);
+        session.setReferralId(expertId);
+        userSessionRepository.save(session);
+    }
+
+    public Long getReferralId(Long chatId) {
+        return getOrCreateUserSession(chatId).getReferralId();
+    }
 }

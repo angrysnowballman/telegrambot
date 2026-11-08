@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.Locale;
 
 @Service
-public class LocalizationServise {
+public class LocalizationService {
 
     private final UserSessionService userSessionService;
     private final MessageSource messageSource;
 
-    public LocalizationServise(UserSessionService userSessionService, MessageSource messageSource) {
+    public LocalizationService(UserSessionService userSessionService, MessageSource messageSource) {
         this.userSessionService = userSessionService;
         this.messageSource = messageSource;
     }

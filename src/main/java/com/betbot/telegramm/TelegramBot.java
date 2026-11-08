@@ -1,5 +1,6 @@
 package com.betbot.telegramm;
 
+
 import com.betbot.telegramm.bot.commands.CommandHandler;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -15,7 +16,7 @@ public class TelegramBot implements SpringLongPollingBot, LongPollingSingleThrea
 
     private final String botToken;
 
-    public TelegramBot(CommandHandler handler, @Value("${Telegram.bot.token}") String botToken) {
+    public TelegramBot(CommandHandler handler, @Value("${telegram.bot.token}") String botToken) {
         this.commandHandler = handler;
         this.botToken = botToken;
     }

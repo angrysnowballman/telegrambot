@@ -20,6 +20,7 @@ public class UserSession {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long chatId;
+    private Long referralId;
     private Locale locale;
     private String firstName;
     @Enumerated(EnumType.STRING)
